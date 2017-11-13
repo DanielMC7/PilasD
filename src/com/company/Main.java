@@ -104,11 +104,9 @@ public class Main {
                             int Sig1;
                             System.out.println("Inserta el Numero que deseas Eliminar ");
                             Sig1 = sc.nextInt();
-                            p.borrar(Sig1);
+                            p.eliminar(Sig1);
                             System.out.println("\n");
                         }
-
-
 
                         break;
                     case 5:

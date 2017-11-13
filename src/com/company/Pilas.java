@@ -28,12 +28,35 @@ public class Pilas {
             top = nuevoNodo;
         }
     }
-    public void borrar (int numero){ //metodo para buscar muestra la cima de la pila
-        if (!vacia())
-            System.out.println("dato eliminado: "+top.getValor());
-        else
-            System.out.println("la pila esta vacia");
+
+
+    public void eliminar(int eliminar) {//elimina
+        Nodo temp = top;
+
+        try {
+
+            if (temp.getValor() == eliminar) {
+
+                top = temp.getProx();
+
+            } else {
+                while (temp != null) {
+                    if (temp.getProx().getValor() == eliminar) {
+                        temp.Unir(temp.getProx().getProx());
+                        size--;
+                        break;
+                    }
+
+                    temp = temp.getProx();
+                }}
+            System.out.println("Valor eliminado:");
+        }
+        catch (Exception ex)
+        {
+            System.out.println("El elemento no ha sido encontrado");
+        }
     }
+
 
 
 
