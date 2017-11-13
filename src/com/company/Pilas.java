@@ -30,6 +30,32 @@ public class Pilas {
         }
     }
 
+    public void eliminar(int eliminar) {//elimina
+        Nodo temp = top;
+
+        try {
+
+            if (temp.getValor() == eliminar) {
+
+                top = temp.getProx();
+
+            } else {
+                while (temp != null) {
+                    if (temp.getProx().getValor() == eliminar) {
+                        temp.Unir(temp.getProx().getProx());
+                        size--;
+                        break;
+                    }
+
+                    temp = temp.getProx();
+                }}
+            System.out.println("Valor eliminado:");
+        }
+        catch (Exception ex)
+        {
+            System.out.println("El elemento no ha sido encontrado");
+        }
+    }
 
 
 

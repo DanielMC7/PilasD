@@ -94,12 +94,20 @@ public class Main {
                          }
 
                         break;
+                    case 4:
+                        if(p.vacia()){
+                            System.out.println("La lista esta vacia no puedes eliminar elementos ");
+                        }
+                        else {
+                            System.out.println("**********************************");
+                            int Sig1;
+                            System.out.println("Inserta el Numero que deseas Eliminar ");
+                            Sig1 = sc.nextInt();
+                            p.eliminar(Sig1);
+                            System.out.println("\n");
+                        }
 
-
-
-
-
-
+                        break;
                     case 5:
                         System.out.println("\nEl total de elementos es de :" + p.pop());
                         System.out.println("**********************************");
@@ -156,14 +164,8 @@ public class Main {
             }
         }
 
-
-
-
-
-
-
     }
 
 
-    }
+}
 
