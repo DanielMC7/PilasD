@@ -42,4 +42,5 @@ public class Nodo {
     public Nodo getProx (){
         return prox;
     }
+
 }

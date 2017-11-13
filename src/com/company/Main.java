@@ -95,42 +95,32 @@ public class Main {
 
                         break;
 
-                    case 4:
-                        if(p.vacia()){
-                            System.out.println("La lista esta vacia no puedes eliminar elementos ");
-                        }
-                        else {
-                            System.out.println("**********************************");
-                            int Sig1;
-                            System.out.println("Inserta el Numero que deseas Eliminar ");
-                            Sig1 = sc.nextInt();
-                            p.borrar(Sig1);
-                            System.out.println("\n");
-                        }
 
 
 
-                        break;
+
+
                     case 5:
+                        System.out.println("\nEl total de elementos es de :" + p.pop());
+                        System.out.println("**********************************");
+                        System.out.println(" ");
+
+                break;
+
+                case 6:
                         if(p.vacia()){
                         System.out.println("La lista esta vacia no hay elementos ");
                     }
                     else {
-                            System.out.println("**********************************");
-                            System.out.println("\nEl total de elementos es de :" + p.pop());
-                            System.out.println("**********************************");
-                            System.out.println(" ");
-                        }
-                        break;
-
-                    case 6:
-                        if(p.vacia()){
-                            System.out.println("La lista esta vacia no hay elementos ");
-                        }else {
-                            System.out.println("**********************************");
-                            System.out.println("\nEl Valor Maximo es:" + max);
-                            System.out.println("**********************************");
-                            System.out.println(" ");
+                            System.out.println("*************************");
+                            if (p.vacia()) {
+                                System.out.println("La lista esta vacia no hay elementos ");
+                            } else {
+                                System.out.println("**********************************");
+                                System.out.println("\nEl Valor Maximo es:" + max);
+                                System.out.println("**********************************");
+                                System.out.println(" ");
+                            }
                         }
                         break;
 

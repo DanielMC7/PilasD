@@ -26,14 +26,10 @@ public class Pilas {
             nuevoNodo = new Nodo(valor);
             nuevoNodo.setProx(top);
             top = nuevoNodo;
+
         }
     }
-    public void borrar (int numero){ //metodo para buscar muestra la cima de la pila
-        if (!vacia())
-            System.out.println("dato eliminado: "+top.getValor());
-        else
-            System.out.println("la pila esta vacia");
-    }
+
 
 
 
