@@ -28,6 +28,14 @@ public class Pilas {
             top = nuevoNodo;
         }
     }
+    public void borrar (int numero){ //metodo para buscar muestra la cima de la pila
+        if (!vacia())
+            System.out.println("dato eliminado: "+top.getValor());
+        else
+            System.out.println("la pila esta vacia");
+    }
+
+
 
     public void peek () {//mostrar
         Nodo temp = top;
@@ -43,35 +51,7 @@ public class Pilas {
     }
 
 
-    /*public void cima(int busqueda) {//busca
-           Nodo temp = top;
-           int posicion = 1;
 
-
-            if (temp != null) {
-
-                while (temp != null) {
-                    if (temp.getValor() == busqueda) {
-                        System.out.println("valor en la posicion:" + posicion);
-
-                    }else
-                    {
-                        if (temp != null ){
-                            System.out.println("El valor ingresado no existe");
-                        }
-                        posicion++;
-                        temp = temp.getProx();
-                        break;
-
-
-                    }
-
-                }
-
-            }
-    }
-
-*/
 
     public void cima(int busqueda) {//busca
 
@@ -100,29 +80,6 @@ catch (Exception ex)
     }
 
 
-   /* public void eliminar(int sigl) {//Elimina
-        Nodo temp = top;
-
-        try {
-            if (temp == null) {
-
-                while (temp != null) {
-                    if (temp.getValor() == sigl) {
-                        temp.Unir(temp.getProx().getProx());
-                        size--;
-                        break;
-                    }
-                    temp = temp.getProx();
-
-
-                }
-            }
-            System.out.println("Valor Eliminado");
-
-        } catch (Exception ex) {
-            System.out.println("El valor ingresado no existe");
-        }
-    } */
 
 
     public int size (){
